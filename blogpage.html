@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+      
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="">
+        <nav class="bg-[#F9F7F3]  container mx-auto">
+             
+          <div class="navbar lg:w-4/5 w-11/12 mx-auto h-[80px]">
+            <div class="navbar-start">
+                <button onclick="history.back()" class="btn  btn-accent bg-[#B4F461] border-none">Blog</button>
+              
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="flex gap-3 items-center">
+                <img src="/assets/logo.png" alt="" srcset="">
+                <h2  class="text-1xl font-bold text-black">Donate bangladesh</h2>
+              </div>
+            </div>
+            <div class="navbar-end">
+             <div class="flex gap-2" >
+                <img src="/assets/coin.png" alt="" srcset="">
+                <h2 id="totalDonationNeed" class="font-semibold" >5500</h2>
+                <h3  class="font-semibold"> BDT</h3>
+             </div>
+            </div>
+          </div>
+        </nav>
+     </header>
+     <main>
+        <!-- <h1 class="mt-7">Important FAQ</h1> -->
+        <!-- Question part -->
+         <div class="lg:w-4/5 w-11/12 mx-auto">
+            <h1 class="text-3xl font-bold text-black mt-6">Important FAQ <span class="text-3xl ">?</span></h1>
+            <div class="collapse collapse-arrow mt-4 border border-1 rounded-none">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the document object model(DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-1 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from dom?</div>
+                <div class="collapse-content">
+                  <p>Using getElementById: The getElementById method allows you to select an element by its ID. ...
+                   1. Using getElementsByClassName: ...
+                   2. Using getElementsByTagName: ...
+                   3. Using querySelector: ...
+                   4. Using querySelectorAll: ...
+                   5. Changing the Text Content. ...
+                   6. Changing the HTML Content. ...
+                   7. Changing the Attribute Value.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-1 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the dom?, and why it is useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-1 rounded-none">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do manipulate an elements  attribute and styles using the dom?</div>
+                <div class="collapse-content">
+                  <p>Manipulating Element Attributes
+                    If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set</p>
+                </div>
+              </div>
+         </div>
+     </main>
+</body>
+</html>
