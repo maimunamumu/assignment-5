@@ -13,7 +13,6 @@
         theme: {
         extend: {
         colors: {
-        "nav-bg": "rgb(249, 247, 243)",
         "bg-btn":"rgb(180, 244, 97)",
         },
         },
@@ -22,8 +21,8 @@
         </script> 
 </head>
 <body>
-  <header class="">
-    <nav class="bg-nav-bg fixed w-full z-[100] container mx-auto">
+  <header class="sticky top-0 bg-white/50 backdrop-blur-xl shadow-md z-50">
+    <nav class="bg-yellow-50  container mx-auto">
          
       <div class="navbar lg:w-4/5 w-11/12 mx-auto h-[80px]">
         <div class="navbar-start">
@@ -39,29 +38,30 @@
         <div class="navbar-end">
          <div class="flex gap-2" >
             <img src="assets/coin.png" alt="" srcset="">
-            <h2 id="totalDonationNeed" class="font-semibold" >5500</h2>
+            <h2 id="totalDonationNeed" class="font-semibold" >60000</h2>
             <h3  class="font-semibold"> BDT</h3>
          </div>
         </div>
       </div>
     </nav>
+     <!-- btn- -->
+
+     <div class=" mx-auto m-5 text-center  flex gap-4 justify-center ">
+       
+      <button id="donationButton" class="btn  bg-bg-btn font-bold border-none">Donation</button>
+      <button id="historyButton" class="btn  hover:bg-bg-btn font-bold border-none">History</button>
+    
+  </div>
+  <div class="divider h-0"></div>
+ 
  </header>
  <main class="lg:w-4/5 w-11/12 mx-auto">
-  <div class="divider my-0 h-0"></div>
-    <!-- btn- -->
-
-    <div class=" mx-auto mt-28 text-center ">
-       
-        <button id="donationButton" class="btn bg-bg-btn ">Donation</button>
-        <button id="historyButton" class="btn  hover:bg-bg-btn ">History</button>
-    </div>
- 
-     
-    </div>
+  
+   
    <!-- card section -->
     <!-- card-1 -->
     <section id="donationSection">
-      <div  class="mt-5">
+      <div  class="">
         <div class="card card-side flex flex-col-reverse lg:flex-row bg-base-100 border border-1">
             <figure class="  ">
               <img class="lg:h-[320px] h-[240px] w-[550px] lg:w-[2150px] m-5 rounded-xl  lg:ml-11"
@@ -121,16 +121,13 @@
       </div>
 </div>
     </section>
-  
-    
-  
-     <!-- donation prop up box  -->
+   <!-- donation prop up box  -->
      <dialog id="modal_dialog_box" class="modal">
       <div class="modal-box text-center">
         <h3 class="lg:text-4xl text-3xl font-bold">Congrates!</h3>
         <div class="py-4">
           <img
-            class="w-9 h-9 h-full mx-auto"
+            class="w-9 h-9 mx-auto"
             src="assets/coin.png"
             alt="donation coin"
           />
@@ -147,7 +144,7 @@
       <div class="lg:px-48 lg:py-[10px]" id="donationDataHistory"></div>
     </section>
  </main>
- <footer id="footer" class="bg-nav-bg h-[100px] mt-5">
+ <footer id="footer" class="bg-yellow-50 h-[100px] mt-5">
 
  </footer>
     <script src="js/noakhali.js"></script>
