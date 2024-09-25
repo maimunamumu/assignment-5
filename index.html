@@ -21,12 +21,12 @@
         </script> 
 </head>
 <body>
-  <header class="sticky top-0 bg-white/50 backdrop-blur-xl shadow-md z-50">
+  <header class="sticky top-0 bg-white/50 backdrop-blur-md shadow-md z-50">
     <nav class="bg-yellow-50  container mx-auto">
          
       <div class="navbar lg:w-4/5 w-11/12 mx-auto h-[80px]">
         <div class="navbar-start">
-            <button onclick="blogPage()" class="btn bg-bg-btn  bg-bg-btn border-none">Blog</button>
+            <button onclick="blog()" class="btn btn-neutral border-none">Blog</button>
           
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -48,8 +48,8 @@
 
      <div class=" mx-auto m-5 text-center  flex gap-4 justify-center ">
        
-      <button id="donationButton" class="btn  bg-bg-btn font-bold border-none">Donation</button>
-      <button id="historyButton" class="btn  hover:bg-bg-btn font-bold border-none">History</button>
+      <button id="donationButton"  class="btn btn-neutral  font-bold border-none">Donation</button>
+      <button id="historyButton" class="btn  font-bold border-none">History</button>
     
   </div>
   <div class="divider h-0"></div>
@@ -68,14 +68,14 @@
                 src="assets/noakhali.png"
                 alt="Movie" />
             </figure>
-            <div class="card-body text-center lg:text-left">
+            <div class="card-body  text-center lg:text-left">
                  <button class="btn btn-md w-[120px] ml-[100px] lg:ml-[0px] flex flex-row ">
                     <img class="h-[20px] w-[20px]" src="assets/coin.png" alt="" srcset="">
-                    <p id="floodAtNoakhaliDonateAmount">0</p> <span>BDT</span></button>
+                    <p id="floodAtNoakhaliDonateAmount">0</p> BDT</button>
               <h2 id="donation_name" class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
               <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
               <input id="donateAmountOfNoakhali" type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[500px] " />
-              <button id="floodAtNoakhaliSubmitBtn" class="btn btn-wide w-[325px] lg:w-[500px] bg-bg-btn font-bold">Donate Now</button>
+              <button id="floodAtNoakhaliSubmitBtn" class="btn btn-neutral btn-wide w-[325px] lg:w-[500px]  font-bold">Donate Now</button>
             </div>
           </div>
     </div>
@@ -94,7 +94,7 @@
             <h2 id="feni" class="card-title font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
             <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
             <input id="donateAmountOfFeni" type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[500px] " />
-            <button id="floodAtFeniSubmitBtn" class="btn btn-wide w-[325px] lg:w-[500px] bg-bg-btn font-bold">Donate Now</button>
+            <button id="floodAtFeniSubmitBtn" class="btn btn-wide w-[325px] lg:w-[500px] btn-neutral font-bold">Donate Now</button>
           </div>
         </div>
   </div>
@@ -116,7 +116,7 @@
           <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
          
           <input id="donateAmountOfQuota" type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[500px] " />
-          <button id="AtQuotaSubmitBtn" class="btn  btn-wide w-[325px] lg:w-[500px] bg-bg-btn font-bold">Donate Now</button>
+          <button id="AtQuotaSubmitBtn" class="btn  btn-wide w-[325px] lg:w-[500px] btn-neutral font-bold">Donate Now</button>
         </div>
       </div>
 </div>
@@ -135,7 +135,7 @@
         <p class="text-md font-semibold">You have donation Humankind</p>
         <h3 class="lg:text-2xl font-bold text-black mt-5">Successfully</h3>
           <form method="dialog">
-            <button class="btn bg-bg-btn mt-5  lg:mt-9">Close information</button>
+            <button class="btn  mt-5  lg:mt-9">Close information</button>
           </form>
       </div>
     </dialog>

@@ -13,7 +13,7 @@ const CommonFeature = function(donateAmount, id, title)  {
 
   // validation data
   if (inputFiled < 0 || isNaN(inputFiled)) {
-   alert ('failed to add money');
+   alert ('Failed to add money ,please try again.');
    return;
   }
 
